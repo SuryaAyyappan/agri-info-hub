@@ -1,0 +1,142 @@
+.weather-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease;
+}
+
+.weather-container h2 {
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.districts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.district-button {
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #2e7d32;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.district-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+}
+
+.district-button.active {
+  background: var(--primary-gradient);
+  color: white;
+  box-shadow: 0 4px 15px rgba(30, 185, 128, 0.3);
+}
+
+.weather-content {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease;
+}
+
+.weather-frame {
+  width: 100%;
+  min-height: 600px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.weather-frame iframe {
+  border: none;
+  width: 100%;
+  height: 800px;
+  background: white;
+}
+
+.weather-direct-link {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.weather-direct-link p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.weather-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--primary-gradient);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 185, 128, 0.2);
+}
+
+.weather-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 185, 128, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .weather-container {
+    padding: 10px;
+  }
+
+  .districts-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .weather-frame {
+    min-height: 400px;
+  }
+
+  .weather-frame iframe {
+    height: 600px;
+  }
+
+  .district-button {
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+} 

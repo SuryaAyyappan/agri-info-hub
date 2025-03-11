@@ -1,0 +1,67 @@
+.crop-detail-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 20px 0;
+}
+
+.crop-detail-card h2 {
+  color: #2e7d32;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.crop-info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.crop-info-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.crop-info-section h3 {
+  color: #ff8f00;
+  margin-bottom: 16px;
+  font-size: 1.2em;
+}
+
+.crop-info-section p {
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+.crop-info-section strong {
+  color: #2e7d32;
+  margin-right: 8px;
+}
+
+/* Loading and error states */
+.crop-detail-card p:only-child {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .crop-info-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .crop-detail-card {
+    padding: 16px;
+    margin: 12px;
+  }
+  
+  .crop-detail-card h2 {
+    font-size: 1.5em;
+  }
+} 

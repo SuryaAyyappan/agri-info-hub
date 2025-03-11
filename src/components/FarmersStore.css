@@ -1,0 +1,43 @@
+.farmers-store-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.farmers-store-container h2 {
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon p {
+  margin: 20px 0;
+  color: #666;
+}
+
+.coming-soon ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.coming-soon li {
+  padding: 10px 0;
+  color: #2e7d32;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.coming-soon li:last-child {
+  border-bottom: none;
+} 
